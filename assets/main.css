@@ -39,7 +39,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
     position:sticky; top:0; z-index:100;
     display:flex; align-items:center; flex-wrap:wrap;
     gap:10px 18px;
-    min-height:64px;
+    min-height:72px;
     padding:8px 28px;
     background:linear-gradient(100deg,#032b5a 0%,#0b5cad 55%,#2196d8 100%);
     font-family:'Roboto',sans-serif;
@@ -48,14 +48,14 @@ a:hover{color:#084a8a; text-decoration:underline;}
 .brand{display:flex; align-items:center; gap:14px;}
 .brand:hover{text-decoration:none;}
 .logo-box{background:#fff; border-radius:3px; padding:4px 10px 5px; text-align:center; line-height:1.15;}
-.logo-ieee{display:block; color:#00629b; font-weight:700; font-size:1.8em; letter-spacing:1px;}
-.logo-tag{display:block; color:#00629b; font-size:.85em; font-style:italic;}
+.logo-ieee{display:block; color:#00629b; font-weight:700; font-size:1.5em; letter-spacing:1px;}
+.logo-tag{display:block; color:#00629b; font-size:.68em; font-style:italic;}
 .site-title{color:#fff; font-weight:700; font-size:1.3em; letter-spacing:.3px;}
 
 .nav{margin-left:auto; display:flex; align-items:center; gap:8px 26px; flex-wrap:wrap;}
 .nav > a, .dropbtn{
-    color:#eaf4fb; text-decoration:none; font-size:.97em;
-    background:none; cursor:pointer; padding:6px 0;
+    color:#eaf4fb; text-decoration:none; font-size:1.08em;
+    background:none; cursor:pointer; padding:12px 0;
 }
 .nav > a:hover, .dropbtn:hover{color:#fff; text-decoration:none;}
 .nav > a.current{color:#fff; font-weight:700;}
