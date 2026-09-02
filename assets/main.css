@@ -111,7 +111,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
 .hero.slim .hero-title{font-size:2.1em; text-shadow:0 1px 8px rgba(0,0,0,.6);}
 
 /* ---------- page content ---------- */
-.content{max-width:90%; margin:0 auto; padding:56px 30px 30px;}
+.content{max-width:80%; margin:0 auto; padding:56px 30px 30px;}
 .content h2{font-size:1.9em; font-weight:700; margin:0 0 1em;}
 .content h3, .break{font-size:1.22em; font-weight:700; margin:1.7em 0 1.2em;}
 .content p{margin:0 0 1.35em;}
