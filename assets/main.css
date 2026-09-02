@@ -53,8 +53,8 @@ a:hover{color:#084a8a; text-decoration:underline;}
 
 .nav{margin-left:auto; display:flex; align-items:center; gap:8px 26px; flex-wrap:wrap;}
 .nav > a, .dropbtn{
-    color:#eaf4fb; text-decoration:none; font-size:1.08em;
-    background:none; cursor:pointer; padding:12px 0;
+    color:#eaf4fb; text-decoration:none; font-size:1.3em;
+    background:none; cursor:pointer; padding:18px 0;
 }
 .nav > a:hover, .dropbtn:hover{color:#fff; text-decoration:none;}
 .nav > a.current{color:#fff; font-weight:700;}
