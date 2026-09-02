@@ -97,3 +97,17 @@
         return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
 })();
+
+/* ----- 新增：移动端汉堡菜单切换逻辑 ----- */
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (toggleBtn && navMenu) {
+        toggleBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            // 切换按钮文字：☰ 和 ✕
+            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+    }
+});
