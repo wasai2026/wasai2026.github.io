@@ -2,10 +2,49 @@
  * Clicking the magnifier opens an input box; the query is matched against
  * the text of every page (fetched once, same-origin only, so it works
  * on GitHub Pages without any server or third-party service).
+ *
+ * Also includes mobile hamburger menu toggle.
  */
 (function () {
     'use strict';
 
+    /* ---------- mobile hamburger menu ---------- */
+    var menuToggle = document.querySelector('.menu-toggle');
+    var navLinks   = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var isOpen = navLinks.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        // Close menu when clicking a link inside it
+        navLinks.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                navLinks.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Auto-close when resizing back to desktop
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 900) {
+                navLinks.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
+    /* ---------- site search ---------- */
     var btn = document.querySelector('.search-btn');
     if (!btn) return;
 
@@ -97,4 +136,3 @@
         return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
 })();
-
