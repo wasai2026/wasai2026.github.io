@@ -150,3 +150,73 @@ footer a{color:#0b5cad;}
     .content{padding:36px 18px 20px;}
     .slot{font-size:1.05em;}
 }
+
+/* --- 桌面端导航样式 --- */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav-menu a {
+    color: #eaf4fb;
+    text-decoration: none;
+    font-size: 1.05em;
+    padding: 8px 0;
+}
+.nav-menu a:hover { color: #fff; }
+
+/* 菜单切换按钮 - 默认在桌面端隐藏 */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/* --- 移动端适配 (屏幕宽度 ≤ 768px) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; /* 允许换行 */
+    }
+
+    /* 显示汉堡菜单按钮 */
+    .menu-toggle {
+        display: block;
+        margin-left: auto; /* 推到右侧 */
+    }
+
+    /* 导航菜单默认隐藏 */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        background: #0b5cad; /* 与导航栏背景色一致 */
+        padding: 10px 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        /* 动画效果 */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    /* 当菜单被激活时显示 */
+    .nav-menu.active {
+        display: flex;
+        max-height: 500px; /* 足够容纳所有菜单项 */
+        transition: max-height 0.5s ease-in;
+    }
+
+    .nav-menu a {
+        padding: 12px 20px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+}
