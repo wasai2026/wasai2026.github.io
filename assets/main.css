@@ -47,7 +47,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
 }
 .brand{display:flex; align-items:center; gap:14px;}
 .brand:hover{text-decoration:none;}
-.logo-box{background:#fff; border-radius:3px; padding:4px 10px; text-align:center; line-height:1.15;}
+.logo-box{background:#fff; border-radius:3px; padding:8px 20px; text-align:center; line-height:1.15;}
 .logo-img {height: 30px; width: auto; margin: 0 auto;}
 .site-title{color:#fff; font-weight:700; font-size:1.3em; letter-spacing:.3px;}
 
