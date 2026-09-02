@@ -48,8 +48,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
 .brand{display:flex; align-items:center; gap:14px;}
 .brand:hover{text-decoration:none;}
 .logo-box{background:#fff; border-radius:3px; padding:4px 10px 5px; text-align:center; line-height:1.15;}
-.logo-ieee{display:block; color:#00629b; font-weight:700; font-size:1.5em; letter-spacing:1px;}
-.logo-tag{display:block; color:#00629b; font-size:.68em; font-style:italic;}
+.logo-img {display: block; height: 38px; width: auto; margin: 0 auto;}
 .site-title{color:#fff; font-weight:700; font-size:1.3em; letter-spacing:.3px;}
 
 .nav{margin-left:auto; display:flex; align-items:center; gap:8px 26px; flex-wrap:wrap;}
