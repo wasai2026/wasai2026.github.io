@@ -139,74 +139,53 @@ footer{
 }
 footer a{color:#0b5cad;}
 
-/* ---------- mobile ---------- */
-@media only screen and (max-width: 900px){
-    .navbar{padding:8px 16px;}
-    .nav{margin-left:0; gap:6px 18px;}
-    .hero img{height:360px;}
-    .hero-title{font-size:1.9em;}
-    .hero.slim img{height:150px;}
-    .hero.slim .hero-title{font-size:1.4em;}
-    .content{padding:36px 18px 20px;}
-    .slot{font-size:1.05em;}
-}
-
-/* --- 桌面端导航样式 --- */
-.nav-menu {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.nav-menu a {
-    color: #eaf4fb;
-    text-decoration: none;
-    font-size: 1.05em;
-    padding: 8px 0;
-}
-.nav-menu a:hover { color: #fff; }
-
-/* 菜单切换按钮 - 默认在桌面端隐藏 */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2em;
-    cursor: pointer;
-    padding: 0 10px;
-}
 
 /* --- 移动端适配 (屏幕宽度 ≤ 768px) --- */
 @media (max-width: 768px) {
     .navbar {
-        flex-wrap: wrap; /* 允许换行 */
+        flex-wrap: wrap;
+        min-height: auto;        /* 让高度自适应 */
+        padding: 8px 16px;
     }
 
-    /* 显示汉堡菜单按钮 */
+    /* ★ 关键：隐藏旧的导航菜单（包括下拉菜单） */
+    .nav {
+        display: none !important;  /* 直接隐藏，避免干扰 */
+    }
+    .dropdown {
+        display: none !important;
+    }
+
+    /* 显示汉堡菜单按钮，并控制顺序 */
     .menu-toggle {
         display: block;
-        margin-left: auto; /* 推到右侧 */
+        order: 2;                /* 放在品牌区之后，搜索按钮之前 */
+        margin-left: auto;       /* 推到右侧 */
     }
 
-    /* 导航菜单默认隐藏 */
+    .search-btn {
+        order: 3;
+    }
+
+    /* 新导航菜单默认折叠（隐藏） */
     .nav-menu {
-        display: none;
+        display: none;           /* 初始隐藏 */
         flex-direction: column;
         width: 100%;
         gap: 0;
-        background: #0b5cad; /* 与导航栏背景色一致 */
+        background: #0b5cad;     /* 与导航栏背景一致（可根据需要改为你的背景色） */
         padding: 10px 0;
         border-top: 1px solid rgba(255,255,255,0.2);
-        /* 动画效果 */
+        order: 4;                /* 放在最后一行 */
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
     }
 
-    /* 当菜单被激活时显示 */
+    /* 当菜单被激活时显示（由 JS 控制添加 .active 类） */
     .nav-menu.active {
         display: flex;
-        max-height: 500px; /* 足够容纳所有菜单项 */
+        max-height: 500px;
         transition: max-height 0.5s ease-in;
     }
 
@@ -215,8 +194,27 @@ footer a{color:#0b5cad;}
         width: 100%;
         text-align: left;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+        font-size: 1em;
+        color: #eaf4fb;
+        text-decoration: none;
     }
     .nav-menu a:last-child {
         border-bottom: none;
+    }
+    .nav-menu a:hover {
+        color: #fff;
+    }
+    .nav-menu a.current {
+        color: #fff;
+        font-weight: 700;
+    }
+
+    /* 可选：调整搜索框在移动端的位置 */
+    .search-box.open {
+        flex-wrap: wrap;
+    }
+    .search-box input {
+        width: 140px;
+        font-size: 0.85em;
     }
 }
