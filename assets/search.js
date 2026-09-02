@@ -98,15 +98,3 @@
     }
 })();
 
-/* ----- 移动端汉堡菜单切换 ----- */
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleBtn = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (toggleBtn && navMenu) {
-        toggleBtn.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
-        });
-    }
-});
