@@ -139,17 +139,17 @@ a:hover{color:#084a8a; text-decoration:underline;}
 /* ---------- page content ---------- */
 .content{max-width:80%; margin:0 auto; padding:56px 30px 30px;}
 .content h2{font-size:1.8em; font-weight:700; margin:0.3em 0 0.1em;}
-.content h3, .break{font-size:1.22em; font-weight:700; margin:1.7em 0 1.2em;}
+.content h3, .break{font-size:1.22em; font-weight:700; margin:0.2em 0 0.2em;}
 .content p{margin:0 0 0.4em;}
 .slot{font-size:1.22em; line-height:1.65; margin:0 0 1.4em;}
 .content ul{margin:0 0 1.4em 1.4em;}
 .content li{margin:0 0 .5em;}
 .content li a, .content p a{text-decoration:underline; text-decoration-color:#0b5cad;}
 
-.speaker-block{margin:0 0 2.6em;}
-.speaker-block h3{font-size:1.35em; margin:0 0 .2em;}
-.speaker-block .affil{font-style:italic; color:#555; margin:0 0 .8em;}
-.speaker-block .talk-title{font-weight:700; margin:0 0 .6em;} 
+.speaker-block{margin:0 0 1.2em;}
+.speaker-block h3{font-size:1.35em; margin:0 0 .1em;}
+.speaker-block .affil{font-style:italic; color:#555; margin:0 0 .1em;}
+.speaker-block .talk-title{font-weight:700; margin:0 0 .1em;} 
 
 /* ---------- paper list (accepted papers) ---------- */
 .paper-list{
