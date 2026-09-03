@@ -48,7 +48,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
 }
 .brand{display:flex; align-items:center; gap:14px;}
 .brand:hover{text-decoration:none;}
-.logo-img {display: block; height: 64px; width: auto; margin: 0 auto;}
+.logo-img {display: block; height: 50px; width: auto; margin: 0 auto;}
 .site-title{color:#032b5a; font-weight:700; font-size:1.3em; letter-spacing:.3px;}
 
 .nav{margin-left:auto; display:flex; align-items:center; gap:8px 26px; flex-wrap:wrap;}
