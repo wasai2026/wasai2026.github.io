@@ -41,9 +41,10 @@ a:hover{color:#084a8a; text-decoration:underline;}
     gap:10px 18px;
     min-height:72px;
     padding:8px 28px;
-    background: #0f172a;              /* 深蓝黑，类似 Tailwind 的 slate-900 */
+    background: #ffffff;              /* 纯白背景 */
     font-family:'Roboto',sans-serif;
-    box-shadow:0 2px 8px rgba(0,0,0,.35);
+    box-shadow:0 1px 6px rgba(0,0,0,.12);
+    border-bottom:1px solid #e2e5e9;
 }
 .brand{display:flex; align-items:center; gap:14px;}
 .brand:hover{text-decoration:none;}
@@ -51,12 +52,13 @@ a:hover{color:#084a8a; text-decoration:underline;}
 .site-title{color:#fff; font-weight:700; font-size:1.3em; letter-spacing:.3px;}
 
 .nav{margin-left:auto; display:flex; align-items:center; gap:8px 26px; flex-wrap:wrap;}
+/* 导航文字改为深色，以适配白色背景 */
 .nav > a, .nav-links > a, .dropbtn{
-    color:#eaf4fb; text-decoration:none; font-size:1.5em;
+    color:#1a1a2e; text-decoration:none; font-size:1.5em;
     background:none; cursor:pointer; padding:18px 0;
 }
-.nav > a:hover, .nav-links > a:hover, .dropbtn:hover{color:#fff; text-decoration:none;}
-.nav > a.current, .nav-links > a.current{color:#fff; font-weight:700;}
+.nav > a:hover, .nav-links > a:hover, .dropbtn:hover{color:#0b5cad; text-decoration:none;}
+.nav > a.current, .nav-links > a.current{color:#032b5a; font-weight:700;}
 .caret{font-size:.8em; display:inline-block; margin-left:2px;}
 
 .dropdown{position:relative; display:inline-block;}
@@ -72,7 +74,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
 .dropdown:hover .dropdown-content{display:block;}
 
 .search-btn{background:none; cursor:pointer; display:flex; align-items:center; padding:4px;}
-.search-btn svg{width:19px; height:19px; fill:none; stroke:#fff; stroke-width:2; stroke-linecap:round;}
+.search-btn svg{width:19px; height:19px; fill:none; stroke:#1a1a2e; stroke-width:2; stroke-linecap:round;}
 
 /* search box opened by the magnifier button */
 .search-box{display:none; position:relative;}
@@ -103,7 +105,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
 }
 .menu-toggle .bar{
     display:block; width:24px; height:2.5px;
-    background:#fff; border-radius:1px;
+    background:#1a1a2e; border-radius:1px;
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
 .menu-toggle[aria-expanded="true"] .bar:nth-child(1){
