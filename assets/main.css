@@ -41,7 +41,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
     gap:10px 18px;
     min-height:72px;
     padding:8px 28px;
-    background: #1a1a2e;              /* 深炭灰/近黑，替代原来的蓝色渐变 */
+    background: #0f172a;              /* 深蓝黑，类似 Tailwind 的 slate-900 */
     font-family:'Roboto',sans-serif;
     box-shadow:0 2px 8px rgba(0,0,0,.35);
 }
