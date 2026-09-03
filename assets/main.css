@@ -153,7 +153,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
 .content li{margin:0 0 .5em;}
 .content li a, .content p a{text-decoration:underline; text-decoration-color:#0b5cad;}
 
-.speaker-block{margin:0 0 1.2em;}
+.speaker-block{margin:0 0 1.2em;padding-left:2em;} /* 新增：内容整体向右缩进 2em */
 .speaker-block h3{font-size:1.35em; margin:0 0 .1em;}
 .speaker-block .affil{font-style:italic; color:#555; margin:0 0 .1em;}
 .speaker-block .talk-title{font-weight:700; margin:0 0 .1em;} 
