@@ -138,7 +138,7 @@ a:hover{color:#084a8a; text-decoration:underline;}
 
 /* ---------- page content ---------- */
 .content{max-width:80%; margin:0 auto; padding:56px 30px 30px;}
-.content h2{font-size:1.9em; font-weight:700; margin:0 0 1em;}
+.content h2{font-size:1.9em; font-weight:700; margin:0 0 0.5em;}
 .content h3, .break{font-size:1.22em; font-weight:700; margin:1.7em 0 1.2em;}
 .content p{margin:0 0 1.35em;}
 .slot{font-size:1.22em; line-height:1.65; margin:0 0 1.4em;}
