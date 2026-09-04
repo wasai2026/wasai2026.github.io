@@ -205,7 +205,7 @@ footer{
 footer a{color:#0b5cad;}
 
 /* ---------- mobile ---------- */
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1200px){
     .navbar{padding:8px 16px;}
     .nav{margin-left:0; gap:6px 12px;}
     .menu-toggle{display:flex;}
